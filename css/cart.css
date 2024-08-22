@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: tomato;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}   
+
+#nav>div{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+#nav>div>a{
+    text-decoration: none;
+    color: white;
+}
+#profile-menu {
+    background-color: tomato;
+    color: white;
+    list-style: none;
+    padding: 0;
+    width: 80px;
+    padding: 10px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+#profile-menu > li:hover {
+    background-color: black;
+}
+
+#login-person:hover #profile-menu {
+    display: block;
+}
+#product-count{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+#cart{
+    cursor: pointer;
+}
+
+/* cart data styles */
+
+#cart-container{
+    border: 1px solid red;
+    margin: 70px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+#cart-container>div{
+    border: 1px solid teal;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#cart-container>div>img{
+    width: 40px;
+    height: 50px;
+}
+#cart-container>div>div{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+}
+#cart-container>div>div>button{
+    padding: 5px 12px;
+    font-size: 20px;
+
+}
+#cart-container>div>div>span{
+    font-size: 25px;
+}
+#cart-container>div>button{
+    padding: 7px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+#total{
+    font-size: 25px;
+    text-align: center;
+}

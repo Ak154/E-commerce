@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Document</title>
+</head>
+<body onload="pageLoadFun()">
+
+    <!--Navbar Section-->
+    <div id="nav">
+        <img src="" alt="Logo">
+        <div id="menu-item">
+            <a href="./index.html">Home</a>
+            <a href="./product.html">Product</a>
+            <a href="./about.html">About</a>
+            <div id="login-person">
+                <span id="user-name">User</span>
+                <ul id="profile-menu">
+                    <li onclick="logoutFun()">Logout</li>
+                </ul>
+            </div>
+            <p id="cart" onclick="cartPage()">Cart: <span id="product-count">0</span></p>
+        </div>
+    </div>
+    
+     <!--Filter Section-->
+    
+     <div id="filter-container">
+
+        <div>
+             <select name="sorting" id="sortByPrice" onchange="sortByPrice()">
+                <option value="">Sort By Price</option>
+                <option value="lth">Low to High</option>
+                <option value="htl">High to Low</option>
+             </select>
+
+             <select name="sorting" id="sortByName" onchange="sortByName()">
+                <option value="">Sort By Name</option>
+                <option value="asc">Ascending</option>
+                <option value="des">Descending</option>
+             </select>
+
+             <select name="sorting" id="filterByCategory" onchange="filterByCategory()">
+                <option value="">Filter By Category</option>
+                <option value="men's clothing">Men</option>
+                <option value="women's clothing">Women</option>
+                <option value="electronics">Electronics</option>
+                <option value="jewelery">Jewelery</option>
+             </select>
+
+        </div>
+        <button onclick="resetFun()">Reset</button>
+
+     </div>
+
+    <!--Product Container Section-->
+    <div id="products-container">
+
+    </div>
+    
+</body>
+<script src="../javascript/index.js"></script>
+</html>
